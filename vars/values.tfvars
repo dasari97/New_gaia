@@ -1,0 +1,11 @@
+datastore = "datastore2-esxi11" #Provide Datastore details here where you want to create your VM.
+host_name = "192.168.53.11"  #Provide Host details here where you want to create your VM.
+template_name = "windows-server2019" #Provide Template details here to create your VM.
+vm_count = "1" #provide no of vm's required.
+vm_name = ["terraform_test"] #Provide Names of the VM's in order.
+cpu_required = "1" #Provide No Of cpu's are required.
+memory_required = "1024" #Provide Size of memory required in KB.
+disk_name_1 = "test_01" #Provide the disk name which will be attached to created VMs.
+disk_size_1 = "100" #Provide the disk size. Minimum 100GB.
+disk_name_2 = "null" #Provide the disk name which will be attached to created VMs.
+disk_size_2 = "null" #Provide the disk size. Minimum 100GB.
