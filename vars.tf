@@ -1,10 +1,6 @@
-variable "vpshere_user" {
-  default = "dasari.krishna@betsol.com"
-}
+variable "vpshere_user" {}
 
-variable "vpshere_password" {
-  default = "9494342038@aA"
-}
+variable "vpshere_password" {}
 
 variable "vpshere_server" {
   default = "192.168.53.20"
