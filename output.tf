@@ -1,7 +1,7 @@
-output "Name_of_VM" {
-  value = resource.vsphere_virtual_machine.vm.*.name  
+output "firmware_type" {
+  value = data.vsphere_virtual_machine.template.firmware
 }
 
-output "VM_IP" {
-  value = resource.vsphere_virtual_machine.vm.*.default_ip_address
+output "Name_of_VM" {
+  value = resource.vsphere_virtual_machine.vm.*.name  
 }

@@ -17,7 +17,7 @@ resource "vsphere_virtual_machine" "vm" {
   host_system_id = data.vsphere_host.host_name.id
 
   firmware = data.vsphere_virtual_machine.template.firmware
-  efi_secure_boot_enabled = true  #Should be marked as true if firmware is "efi".
+  efi_secure_boot_enabled = var.efi_mode  #Should be marked as true if firmware is "efi".
   
   wait_for_guest_net_timeout = 0
   

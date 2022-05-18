@@ -1,6 +1,10 @@
-variable "vpshere_user" {}
+variable "vpshere_user" {
+  default = null
+}
 
-variable "vpshere_password" {}
+variable "vpshere_password" {
+  default = null
+}
 
 variable "vpshere_server" {
   default = "192.168.53.20"
@@ -17,7 +21,6 @@ variable "network" {
 }
 
 variable "resource_pool" {
-  default = "192.168.53.11/Resources"
 }
 
 variable "host_name" {}
@@ -28,6 +31,15 @@ variable "vm_count" {}
 
 variable "vm_name" {
     type = list
+}
+
+variable "vm_snap_name" {
+    type = list
+    default = null
+}
+
+variable "efi_mode" {
+  type = bool
 }
 
 variable "cpu_required" {}

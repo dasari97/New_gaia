@@ -1,0 +1,16 @@
+vpshere_user = "" #Mention the Vsphere user login details here. By default user is mentioned as null. 
+vpshere_password = "" #Mention the password for the above mentioned user here.
+datastore = "" #Provide Datastore details here where you want to create your VM.
+host_name = ""  #Provide Host details here where you want to create your VM.
+resource_pool = "/Resources" #Mention the Host-Name before /Resource. Ex: If 192.168.53.13 is host then resource_pool value is "192.168.53.13/Resources".
+template_name = "" #Provide Template details here to create your VM.
+efi_mode = "" #Expacted values: true/false. Check Documentation for more info.
+vm_count = "" #provide no of vm's required.
+vm_name = [""] #Provide Names of the VM's in order. This variable is a list type.. mention the vm names in double qoutes separated by , ex: ["sample1", "Sample2"].
+cpu_required = "" #Provide No Of cpu's are required.
+memory_required = "" #Provide Size of memory required in MB.
+disk_name_1 = "" #Provide the disk name which will be attached to created VMs.
+disk_size_1 = "" #Provide the disk size. Minimum 100GB.
+disk_name_2 = "null" #Provide the disk name which will be attached to created VMs.
+disk_size_2 = "null" #Provide the disk size. Minimum 100GB.
+#vm_snap_name = [""]#Provide Names of the VM's Snapshot in order. This variable is a list type.. mention the vm names in double qoutes separated by , ex: ["sample1", "Sample2"].
