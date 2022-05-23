@@ -42,13 +42,6 @@ ii) then, run
 
 ***"terraform plan --var-file vars/values.tfvars"*** command.
 
-        * Check the output once for "firmware_type" variable.
-
-        * It may have either "bios" or "efi" as values. If value is **bios**, 
-        then "***efi_mode***" value in vars/values.tfvars file should be "***false***".
-        * If the value is  **efi**, then "***efi_mode***" value in vars/values.tfvars file should be "***true***".
-
-
 iii) Finally, run 
 
 ***"terraform apply --var-file vars/values.tfvars"*** command.
